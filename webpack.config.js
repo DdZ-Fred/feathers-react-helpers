@@ -3,6 +3,11 @@ module.exports = {
   output: {
     path: './',
     filename: 'index.js',
+    library: 'FeathersReactHelpers',
+    libraryTarget: 'umd',
+    externals: {
+      react: 'react',
+    },
   },
   resolve: {
     extensions: ['', '.js'],
