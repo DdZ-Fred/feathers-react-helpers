@@ -1,7 +1,9 @@
 import FeathersConnector from './FeathersConnector';
 import withFeathers from './withFeathers';
 
-export default {
+const helpers = {
   FeathersConnector,
   withFeathers,
 };
+
+export default helpers;
