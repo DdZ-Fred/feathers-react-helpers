@@ -1,9 +1,12 @@
 import FeathersConnector from './FeathersConnector';
 import withFeathers from './withFeathers';
 
-const helpers = {
-  FeathersConnector,
-  withFeathers,
-};
-
-export default helpers;
+// const helpers = {
+//   FeathersConnector,
+//   withFeathers,
+// };
+//
+// export default helpers;
+//
+export { FeathersConnector };
+export { withFeathers };
