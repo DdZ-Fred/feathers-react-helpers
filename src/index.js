@@ -5,3 +5,5 @@ export default {
   FeathersConnector,
   withFeathers,
 };
+
+export FeathersConnector;
