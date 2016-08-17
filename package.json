@@ -1,6 +1,6 @@
 {
   "name": "feathers-react-helpers",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A small library that provides helpers to connect components to the feathers client app. WORK IN PROGRESS",
   "main": "index.js",
   "scripts": {
