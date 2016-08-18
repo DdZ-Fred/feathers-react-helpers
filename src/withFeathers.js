@@ -1,18 +1,19 @@
 import React, { PropTypes } from 'react';
 
-function withFeathers(WrappedComponent) {
+export default function withFeathers(WrappedComponent) {
+  const wrappedComponentName = WrappedComponent.displayName
+    || WrappedComponent.name
+    || 'Component';
+  const displayName = `withFeathers(${wrappedComponentName})`;
+
   const contextTypes = {
     feathers: PropTypes.object,
   };
 
-  class FeathersContainer extends React.Component {
-
-    render() {
-      return <WrappedComponent feathers={this.context.feathers} {...this.props}/>;
-    }
+  function WithFeathers(props, context) {
+    return <WrappedComponent feathers={context.feathers} {...props}/>;
   }
-  FeathersContainer.contextTypes = contextTypes;
-  return FeathersContainer;
+  WithFeathers.displayName = displayName;
+  WithFeathers.contextTypes = contextTypes;
+  return WithFeathers;
 }
-
-export default withFeathers;
