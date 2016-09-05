@@ -15,7 +15,8 @@
   },
   "keywords": [
     "feathers",
-    "react"
+    "react",
+    "react-component"
   ],
   "author": "Frederic Rey",
   "license": "MIT",
